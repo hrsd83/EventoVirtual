@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*HEADING STYLES*/
+.header{
+ display: flex;
+ justify-content: center;
+
+}
+svg{
+  width:100%;
+}
+
+.title-webinar{
+font-family: SharpSansNo1-Bold;
+font-size: 13px;
+color: #FFFFFF;
+letter-spacing: 0.93px;
+text-align: center;
+line-height: 15px;
+position: fixed;
+margin-top: 4.8%;
+position: absolute;
+
+}
+
+.title2{
+width: 66.7%;
+height: 9.2%;
+font-family: SharpSansNo1-Bold;
+font-size: 40px;
+color: #02363D;
+text-align: center;
+line-height: 52px;
+position: fixed;
+margin-top: 8.2%;
+position: absolute;
+
+
+}
+.paragraph-day{
+  font-family: SharpSansNo1-Semibold;
+  font-size: 21px;
+  color: #00373E;
+  text-align: center;
+  line-height: 40px;
+}
+
+/* STYLES IMAGES */
+.company-images{
+ margin-top: 80px;
+ margin-left: 100px;
+}
+
+/* STYLES ARTICLE */
+.article{
+width: 39.2%;
+height: 52.7%;
+margin-left: 100px;
+font-family: ProximaNova-Regular;
+font-size: 16px;
+color: #405457;
+letter-spacing: 0;
+line-height: 28px;
+
+
+}
+
+.article-one, .article-two, .article-three{
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.name-specialists{
+  width: 37.8%;
+  height: 52.7%;  
+  /* margin-left: 100px; */
+  display: table-caption;
+  
+}
+
+.name-specialists svg{
+  width: 460px;
+  margin-bottom: 20px;
+}
+
+/* STYLES FORM */
+
+.form{
+  width: 32.2%;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px;
+  position: relative;
+ 
+  
+ 
+}
+
+.form-title{
+  text-align: center;
+  margin-top: 0;
+}
+
+.form__input, .form__label, .btn{
+  display: block;
+  width: 100%;
+
+} 

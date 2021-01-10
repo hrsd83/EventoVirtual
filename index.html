@@ -25,11 +25,11 @@
                     </g>
                 </svg>
                     <div class="title-webinar">
-                        <p>WEBINAR</p>
+                        <p class="webinar">WEBINAR</p>
                         </div>
                         <div class="title2">
                         <p>El reto de humanizar el CX financieron en 2021</p>
-                        <p>La experiencia de un Unicornio de Latan</p>
+                        <p>La experiencia de un Unicornio de LATAM</p>
                         <p class="paragraph-day">MIERCOLES 16 DE DICIEMBRE|17 HS (HORARIO DE QUITO)</p>
                     </div>
         </header>
@@ -40,19 +40,27 @@
         <section class="section-form">
             <form action="" class="form">
                 <h2 class="form-title">¡Inscríbete y reserva tu lugar ahora!</h2>
-                <label for="" class="form__label">Nombre</label>
-                <input type="text" class="form__input">
+                <label  for="" class="form__label">Nombre</label>
+                <input type="text" class="form__input" id="name">
                 <label for="" class="form__label">Apellido</label>
-                <input type="text" class="form__input">
+                <input type="text" class="form__input" id="last_name">
                 <label for="" class="form__label">Correo electronico del trabajo</label>
-                <input type="text" class="form__input">
-                <label for="" class="form__label">Pais</label>
-                <input type="text" class="form__input">
+                <input type="text" class="form__input" id="mail">
+                <label class="form__input">Selecciona tu país</label>
+                <input type="text" class="form__input" name="pais" id="countries" list="paises"/>
+                <datalist id="paises">
+                <option value="España">
+                <option value="México">
+                <option value="Argentina">
+                <option value="Perú">
+                <option value="Colombia">
+                <option value="Otro país"> 
+                </datalist>
                 <label for="" class="form__label">Numero de teléfono</label>
-                <input type="text" class="form__input">
+                <input type="text" class="form__input" id="phone">
                 <label for="" class="form__label">Puesto de trabajo</label>
-                <input type="text" class="form__input">
-                <button class="btn">Inscríbete</button>
+                <input type="text" class="form__input" id="work">
+                <input class="btn" type="button" value="Guardar" onclick="saveData()">
             </form>
         </section>
         <!-- Article -->
@@ -62,7 +70,6 @@
             <p class="article-three">Escucha de primera mano la voz de nuestros especialistas:</p>
         </article>
 
-        
         <aside>
             <div class="name-specialists">
                 <svg width="202px" height="74px" viewBox="0 0 204 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -165,9 +172,16 @@
                     </g>
                 </svg>
             </div>
+            <p class="article-four">Participa  e inspírate  para innovar y mejorar la interacción entre clientes y marcas con historias de éxito de empresas del ámbito financiero en América Latina.</p>
+            <p class="article-five">¡Te esperamos!</p>
         </aside>
+        <section class="company-images">
+            <a href="#"><img src="assets/Group 5.jpg" alt="Group5"></a>
+        </section>
     </div>
 
-  <script src="javas.js"></script>
+    
+    
+  <script src="form.js"></script>
 </body>
 </html>

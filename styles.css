@@ -17,10 +17,24 @@
 }
 svg{
   width:100%;
+  overflow: hidden;
 }
 
+.title-webinar .webinar{
+  width: 100px;
+  height: 30px;
+  font-family: SharpSansNo1-Bold;
+  font-size: 13px;
+  color: #FFFFFF;
+  letter-spacing: 0.93px;
+  text-align: center;
+  line-height: 15px;
+  background: orangered;
+  padding: 7px;
+  border-radius: 3px;
+}
 .title-webinar{
-font-family: SharpSansNo1-Bold;
+font-family: "SharpSansNo1-Bold";
 font-size: 13px;
 color: #FFFFFF;
 letter-spacing: 0.93px;
@@ -47,7 +61,7 @@ position: absolute;
 
 }
 .paragraph-day{
-  font-family: SharpSansNo1-Semibold;
+  font-family: "SharpSansNo1-Semibold";
   font-size: 21px;
   color: #00373E;
   text-align: center;
@@ -58,6 +72,7 @@ position: absolute;
 .company-images{
  margin-top: 80px;
  margin-left: 100px;
+ width: max-content;
  
 }
 
@@ -78,14 +93,21 @@ line-height: 28px;
   margin-top: 40px;
   margin-bottom: 30px;
 }
+.article-four, .article-five{
+  font-family: ProximaNova-Regular;
+  font-size: 16px;
+  color: #405457;
+  letter-spacing: 0;
+  line-height: 28px;
+  margin-left: 100px;
+  width: 28%;
+
+}
 
 
 .name-specialists{
-  width: 37.8%;
+  width: 46%;
   height: 52.7%;  
- 
-
-  
 }
 
 .name-specialists svg{
@@ -95,18 +117,16 @@ line-height: 28px;
 
 
 /* STYLES FORM */
-
 .section-form{
   float: right;
-  width: 35%;
+  width: 100%;
+  max-width: 100%;
 }
 .form{
   width: 100%;
   height: 47%;
   max-width: 70%;
   padding: 20px;
-  
-
 }
 
 .form-title{
@@ -128,7 +148,6 @@ line-height: 28px;
   color: #02363D;
 }
 
-
 .btn{
   background:  #02363D;
   color: #FFFFFF;
@@ -139,3 +158,74 @@ line-height: 28px;
   font-size: 19px;
   text-align: center;
 }
+
+/* FOOTER */
+
+.footer{
+  width: 100%;
+  height: 9.4%;
+}
+
+
+
+
+
+/* MEDIAS QUERIES */
+@media only screen and (max-width: 400px) {
+
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 700px) {
+  .title-webinar, .paragraph-day, p {
+    font-size: 19px;
+   
+  }
+ 
+  .company-images{
+    display: none;
+  }
+  .article{
+    display: none;
+  }
+  aside{
+    display: none;
+  }
+  .section-form{
+   width: 100%;
+  }
+  .form-title{
+    text-align: center;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  
+  .section-form{
+    width: 100%;
+   }
+ }
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .section-form{
+    width: 50%;
+   }
+ }
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .section-form{
+    width: 40%;
+   }
+ }
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .section-form{
+    width: 40%;
+   }
+ }

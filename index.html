@@ -38,16 +38,17 @@
             <a href="#"><img src="assets/Group 5.jpg" alt="Group5"></a>
         </section>
         <section class="section-form">
-            <form action="" class="form">
+            
+            <form action="" class="form" id="frm-register">
                 <h2 class="form-title">¡Inscríbete y reserva tu lugar ahora!</h2>
                 <label  for="" class="form__label">Nombre</label>
-                <input type="text" class="form__input" id="name">
+                <input type="text" class="form__input" id="name" required>
                 <label for="" class="form__label">Apellido</label>
-                <input type="text" class="form__input" id="last_name">
+                <input type="text" class="form__input" id="last_name" required>
                 <label for="" class="form__label">Correo electronico del trabajo</label>
-                <input type="text" class="form__input" id="mail">
+                <input type="text" class="form__input" id="mail" required>
                 <label class="form__input">Selecciona tu país</label>
-                <input type="text" class="form__input" name="pais" id="countries" list="paises"/>
+                <input type="text" class="form__input" name="pais" id="countries" list="paises" required/>
                 <datalist id="paises">
                 <option value="España">
                 <option value="México">
@@ -57,10 +58,11 @@
                 <option value="Otro país"> 
                 </datalist>
                 <label for="" class="form__label">Numero de teléfono</label>
-                <input type="text" class="form__input" id="phone">
+                <input type="text" class="form__input" id="phone" required>
                 <label for="" class="form__label">Puesto de trabajo</label>
-                <input type="text" class="form__input" id="work">
-                <input class="btn" type="button" value="Guardar" onclick="saveData()">
+                <input type="text" class="form__input" id="work" required>
+                <input class="btn" id="btn-send" type="button" value="Guardar">
+                <!-- onclick="saveData()" -->
             </form>
         </section>
         <!-- Article -->
@@ -179,9 +181,12 @@
             <a href="#"><img src="assets/Group 5.jpg" alt="Group5"></a>
         </section>
     </div>
+    
+    <script src="formulario.js"></script>
+    <!-- <script src="localStorage.js"></script> -->
 
+    <!-- <script src="form.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     
-    
-  <script src="form.js"></script>
 </body>
 </html>

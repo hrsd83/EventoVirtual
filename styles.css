@@ -6,24 +6,19 @@
 
 .container{
   width: 100%;
-  
+  flex-wrap: wrap;
 }
 
 /*HEADING STYLES*/
 .header{
  display: flex;
  justify-content: center;
+}
 
-}
-svg{
-  width:100%;
-  overflow: hidden;
-}
 
 .title-webinar .webinar{
   width: 100px;
   height: 30px;
-  font-family: SharpSansNo1-Bold;
   font-size: 13px;
   color: #FFFFFF;
   letter-spacing: 0.93px;
@@ -34,7 +29,6 @@ svg{
   border-radius: 3px;
 }
 .title-webinar{
-font-family: "SharpSansNo1-Bold";
 font-size: 13px;
 color: #FFFFFF;
 letter-spacing: 0.93px;
@@ -43,13 +37,10 @@ line-height: 15px;
 position: fixed;
 margin-top: 4.8%;
 position: absolute;
-
 }
-
 .title2{
 width: 66.7%;
 height: 9.2%;
-font-family: SharpSansNo1-Bold;
 font-size: 40px;
 color: #02363D;
 text-align: center;
@@ -57,11 +48,8 @@ line-height: 52px;
 position: fixed;
 margin-top: 8.2%;
 position: absolute;
-
-
 }
 .paragraph-day{
-  font-family: "SharpSansNo1-Semibold";
   font-size: 21px;
   color: #00373E;
   text-align: center;
@@ -72,115 +60,84 @@ position: absolute;
 .company-images{
  margin-top: 80px;
  margin-left: 100px;
- width: max-content;
  
 }
-
 /* STYLES ARTICLE */
 .article{
 width: 26.2%;
 height: 52.7%;
 margin-left: 100px;
-font-family: ProximaNova-Regular;
 font-size: 16px;
 color: #405457;
 letter-spacing: 0;
 line-height: 28px;
-
 }
-
 .article-one, .article-two, .article-three{
   margin-top: 40px;
   margin-bottom: 30px;
 }
 .article-four, .article-five{
-  font-family: ProximaNova-Regular;
   font-size: 16px;
   color: #405457;
   letter-spacing: 0;
   line-height: 28px;
   margin-left: 100px;
   width: 28%;
-
 }
-
-
 .name-specialists{
   width: 46%;
   height: 52.7%;  
 }
-
 .name-specialists svg{
   width: 57%;
   margin-bottom: 20px;
 }
-
-
 /* STYLES FORM */
 .section-form{
   float: right;
-  width: 100%;
   max-width: 100%;
+  flex-wrap: wrap;
+
 }
 .form{
   width: 100%;
-  height: 47%;
-  max-width: 70%;
   padding: 20px;
+  flex-wrap: wrap;
 }
-
 .form-title{
   text-align: center;
   margin-bottom: 50px;
-  font-family: SharpSansNo1-Semibold;
   font-size: 20px;
   color: #02363D;
   text-align: center;
   line-height: 29px;
 }
-
 .form__input, .form__label{
   width: 100%;
   height: 40px;
   margin-bottom: 27px;
-  font-family: SharpSansNo1-Semibold;
   font-size: 14px;
   color: #02363D;
 }
-
 .btn{
   background:  #02363D;
   color: #FFFFFF;
   width: 100%;
   height: 40px;
   margin-top: 30px;
-  font-family: SharpSansNo1-Semibold;
   font-size: 19px;
   text-align: center;
 }
-
-/* FOOTER */
-
-.footer{
-  width: 100%;
-  height: 9.4%;
+.input-error{
+  border: 2px solid red ;
 }
-
-
-
-
-
 /* MEDIAS QUERIES */
-@media only screen and (max-width: 400px) {
 
-}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 700px) {
   .title-webinar, .paragraph-day, p {
-    font-size: 19px;
-   
+    font-size: 25px;
   }
- 
   .company-images{
     display: none;
   }
@@ -190,9 +147,7 @@ line-height: 28px;
   aside{
     display: none;
   }
-  .section-form{
-   width: 100%;
-  }
+ 
   .form-title{
     text-align: center;
   }
@@ -201,31 +156,32 @@ line-height: 28px;
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   
-  .section-form{
-    width: 100%;
-   }
  }
-
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .section-form{
-    width: 50%;
-   }
- }
 
+ }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .section-form{
-    width: 40%;
-   }
+ 
  }
-
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .section-form{
-    width: 40%;
+    width: 30%;
    }
+ }
+ @media only screen and (max-width: 1200px) {
+  .article{
+    display: none;
+  }
+  aside{
+    display: none;
+  }
+  .company-images{
+    text-align: center;
+  }
  }

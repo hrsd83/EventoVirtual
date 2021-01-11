@@ -1,5 +1,5 @@
 
-
+const btnSend = document.querySelector('#btn-send');
 
 // Array de todos los datos
 let alldata = []
@@ -26,49 +26,90 @@ function saveData(){
     arjson = JSON.stringify(alldata);
     
   // Almacenamos los datos en la BD Local
-    localStorage.setItem('frm',arjson ) 
+    localStorage.setItem('frm',arjson );
+
+  // Borramos los campos del formulario
+    borrarCampos();
 }
 
 
 // Validar todos los campos
 function validate(){
   // todos los campos
-  let name = document.getElementById('name').value;
-  let lastName = document.getElementById('last_name').value;
-  let mail = document.getElementById('mail').value;
-  let countries = document.getElementById('countries').value;
-  let phone = document.getElementById('phone').value;
-  let work = document.getElementById('work').value;
+  name = document.getElementById('name').value;
+  lastName = document.getElementById('last_name').value;
+  mail = document.getElementById('mail').value;
+  countries = document.getElementById('countries').value;
+  phone = document.getElementById('phone').value;
+  work = document.getElementById('work').value;
 
   // Validamos el nombre
   if(name.length < 2){
-    alert('Falta el nombre');
+    Swal.fire({
+      icon: 'error',
+      title: 'Disculpa...',
+      text: 'Completa el nombre!'
+    })
     return false;
   }
   // Validamos el apellido
   if(lastName.length < 2){
-    alert('Falta el apellido');
+    Swal.fire({
+      icon: 'error',
+      title: 'Disculpa...',
+      text: 'Completar el apellido!'
+      
+    })
     return false;
   }
   // Validamos el email
   if(mail.length < 10){
-    alert('Falta el email');
+    Swal.fire({
+      icon: 'error',
+      title: 'Disculpa...',
+      text: 'Completar el email!'
+    })
     return false;
   }
   // Validamos el pais
-  if(paises.length < 5){
-    alert('Falta el pais');
+  if(countries.length < 1){
+    Swal.fire({
+      icon: 'error',
+      title: 'Disculpa...',
+      text: 'Completar el pais!'
+    })
     return false;
   }
   // Validamos el telefono
   if(phone.length < 1){
-    alert('Falta el pais');
+    Swal.fire({
+      icon: 'error',
+      title: 'Disculpa...',
+      text: 'Completar el teléfono!'
+    })
     return false;
   }
     // Validamos el trabajo
     if(work.length < 1){
-      alert('Falta el puesto de trabajo');
+      Swal.fire({
+        icon: 'error',
+        title: 'Disculpa...',
+        text: 'Completar el trabajo!'
+      })
       return true
     }
-
 }
+
+// Funcion para borrar los campos
+
+function borrarCampos(){
+  // Se colocan los campos vacios
+  name.value = '';
+  lastName.value = '';
+  mail.value = '';
+  countries.value = '';
+  phone.value = '';
+  work.value = '';
+}
+btnSend.addEventListener('click',validate);
+

@@ -16,7 +16,7 @@
 }
 
 
-.title-webinar .webinar{
+.title-webinar .p-webinar{
   width: 100px;
   height: 30px;
   font-size: 13px;
@@ -38,16 +38,14 @@ position: fixed;
 margin-top: 4.8%;
 position: absolute;
 }
-.title2{
-width: 66.7%;
-height: 9.2%;
-font-size: 40px;
-color: #02363D;
-text-align: center;
-line-height: 52px;
-position: fixed;
-margin-top: 8.2%;
-position: absolute;
+.title2 {
+  width: 100%;
+  font-size: 38px;
+  color: #02363D;
+  text-align: center;
+  line-height: 40px;
+  margin-top: 10%;
+  position: absolute;
 }
 .paragraph-day{
   font-size: 21px;
@@ -84,10 +82,7 @@ line-height: 28px;
   margin-left: 100px;
   width: 28%;
 }
-.name-specialists{
-  width: 46%;
-  height: 52.7%;  
-}
+
 .name-specialists svg{
   width: 57%;
   margin-bottom: 20px;
@@ -136,7 +131,8 @@ line-height: 28px;
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 700px) {
   .title-webinar, .paragraph-day, p {
-    font-size: 19px;
+    font-size: 28px;
+    margin-top: 10px;
   }
   .company-images{
     display: none;
@@ -151,6 +147,7 @@ line-height: 28px;
   .form-title{
     text-align: center;
   }
+  
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -165,13 +162,17 @@ line-height: 28px;
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
- 
+  
  }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .section-form{
     width: 30%;
+   }
+   aside{
+
+    width: 70%;
    }
  }
  @media only screen and (max-width: 1200px) {

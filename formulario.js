@@ -1,7 +1,8 @@
 'use strict'
-// Se crea la const de btn-send
+// The const of btn-send is created
 const btnSend = document.querySelector('#btn-send');
-// Se crea las const para los inputs
+
+// The const is created for the inputs
 const firtsName = document.querySelector('#name');
 const lastName = document.querySelector('#last_name');
 const mail= document.querySelector('#mail');
@@ -19,7 +20,7 @@ function saveData(){
   validate()
 
   // Obtener datos
-  obtenerDatos()
+  getIformation()
 
   // array de datos
   let data= [];
@@ -67,7 +68,7 @@ let validate = () => {
   work.value = '';
 }
 // Se crea funcion para obtener datos
-let obtenerDatos = () =>{
+let getIformation = () =>{
   let error = validate();
   
     if (error) {
@@ -86,5 +87,7 @@ let obtenerDatos = () =>{
       }); 
   }
 };
+
+
 
 btnSend.addEventListener('click', saveData);
